@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
             sonuc = s1 + s2;
 
-            MessageBox.Show($"Sonuç: {sonuc}");
+            label3.Text = "Sonuç: " + sonuc;
         }
 
         private void button2_Click(object sender, EventArgs e)
