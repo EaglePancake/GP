@@ -101,5 +101,44 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs events)
+        {
+            // Değişkenler
+
+            // Değer tipleri - değişkenin değeri doğrudan bellekte saklanır (stack-yığın)
+            // Referans tipler - değişkenin adresi bellekte saklanır, değeri heap-öbek bölgesinde tutulur
+
+            // Değer tipleri
+            // byte veri türü
+            // 8 bitlik 2^8 = 256
+            // 0..255
+            byte a = 2;
+
+            // sbyte veri türü
+            // -128..127
+            sbyte b = -26;
+
+            // short veri türü
+            // -32768..32767
+            short c = -30000;
+
+            // ushort
+            // 0..65535
+            ushort d = 60000;
+
+            // int veri türü
+            // -2^31..2^31-1
+            int e = 1243243112;
+
+            // uint veri türü
+            // 0..2^32-1
+
+            // long veri türü
+            // -2^63..2^63-1
+
+            // ulong veri türü
+            // 0..2^64-1
+        }
     }
 }
