@@ -113,23 +113,23 @@ namespace WindowsFormsApp1
             // byte veri türü
             // 8 bitlik 2^8 = 256
             // 0..255
-            byte a = 2;
+            //byte a = 2;
 
             // sbyte veri türü
             // -128..127
-            sbyte b = -26;
+            //sbyte b = -26;
 
             // short veri türü
             // -32768..32767
-            short c = -30000;
+            //short c = -30000;
 
             // ushort
             // 0..65535
-            ushort d = 60000;
+            //ushort d = 60000;
 
             // int veri türü
             // -2^31..2^31-1
-            int e = 1243243112;
+            //int e = 1243243112;
 
             // uint veri türü
             // 0..2^32-1
@@ -139,6 +139,121 @@ namespace WindowsFormsApp1
 
             // ulong veri türü
             // 0..2^64-1
+
+            // float
+
+            // double
+
+            // decimal
+            // decimal a = 25.6m;
+
+            // bool
+
+            // char
+
+            // REFERANS TÜRLER
+
+            // string veri türü
+            // unicode
+            // ""
+            //string a = "Görsel";
+            //string b = " Programlama 2";
+            //string c = a + b;
+            //label3.Text = c;
+
+            string dosya = "c:\\okul\\deneme.txt";
+            //veya
+            string dosya2 = @"c:\okul\deneme.txt";
+
+            //string a = "deneme";
+            //int b = 61;
+            //label3.Text = a + b.ToString();
+            //b = 102;
+
+            // object veri türü
+            // csharpta bütün veri türleri gizli olarak objecct veri türünden türer
+            // nesneler birer object olduğundan bütün değerler ve nesneler object türünden
+            // bir değişkene atanabilir
+
+            //object a;
+            //a = 5;
+            //label4.Text = a.GetType().ToString();
+            //a = 'A';
+            //label5.Text = a.GetType().ToString();
+            //a = 153.2;
+            //label6.Text = a.GetType().ToString();
+            //a = true;
+            //label7.Text = a.GetType().ToString();
+            //a = 46.1351m;
+            //label8.Text = a.GetType().ToString();
+
+            // TÜR DÖNÜŞÜMÜ
+            // Büyük çaplı projelerde çok fazla değişken kullanılır.
+            // Bazen bu değişkenlerle ile işlemler yapmak isteyebiliriz,
+            // örneğin int türünden bir sayı ile double türünden bir sayıyı toplamak
+            // isteyebiliriz. Bu gibi durumlarda tiplerin uyumlu olabilmesi için
+            // tür dönüşümü yapmış oluruz.
+
+            // String bir veri türünü int türde bir veri ile birleştirmek istersek
+            // int veri türünü string'e geçici olarak dönüştürürüz.
+            // C#'ta tür dönüşümlerini genel olarak 2 alt başlıkta inceleriz.
+
+            // Bunlar; Bilinçiz tür dönüşümü ve bilinçli tür dönüşümüdür.
+
+            // Bilinçiz tür dönüşümü
+            // Derleyici tarafından bir değişkenin tanımladığımız tür dışında geçici
+            // olarak başka bir türü dönüştürülmesine bilinçsiz tür dönüşümü denir
+
+            //int a = 5;
+            //float b = a;
+
+            //float c = 45.2f;
+            //int d = c;
+
+            // Bilinçsiz olarak küçük büyüğe dönüşebilir fakat, büyük küçüğe dönüştürülemez
+            // Bunun amacı veri kaybını engellemektir.
+
+            //byte a = 12;
+            //int b;
+            //b = a;
+            //label9.Text = b.ToString();
+
+            // Bilinçi tür dönüşümü
+            // Genellike derleyicinin izin vermediği durumlarda kullanılır
+            // fakat programın anlaşılabilirliğini arttırmak için her durumda bilinçi tür
+            // dönüşümünü kullanmamız tavsiye edilir.
+            // Bilinçli tür dönüşümünde hem küçüğü büyüğe, hem büyüğü küçüğe dönüştürebiliriz.
+            // Tür dönüştürme operatörü olarak parantez kullanılır. ()
+
+            byte a = 34;
+            int b = (int)a;
+
+            checked
+            {
+                int c = 666;
+                byte d = (byte)c;
+            }
+            
+
+            // checked - unchecked
+            // bilinçi dönüşümde veri kaybını önlemek için kullanılır
+
+            // dönüşümü checked bloğunun içinde yaparsak veri kaybı olduğunda bizi uyarır
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            object a;
+            a = 5;
+            label4.Text = a.GetType().ToString();
+            a = 'A';
+            label5.Text = a.GetType().ToString();
+            a = 153.2;
+            label6.Text = a.GetType().ToString();
+            a = true;
+            label7.Text = a.GetType().ToString();
+            a = 46.1351m;
+            label8.Text = a.GetType().ToString();
         }
     }
 }
