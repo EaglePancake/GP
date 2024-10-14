@@ -187,6 +187,9 @@ namespace WindowsFormsApp1
             //a = 46.1351m;
             //label8.Text = a.GetType().ToString();
 
+
+
+
             // TÜR DÖNÜŞÜMÜ
             // Büyük çaplı projelerde çok fazla değişken kullanılır.
             // Bazen bu değişkenlerle ile işlemler yapmak isteyebiliriz,
@@ -225,20 +228,67 @@ namespace WindowsFormsApp1
             // Bilinçli tür dönüşümünde hem küçüğü büyüğe, hem büyüğü küçüğe dönüştürebiliriz.
             // Tür dönüştürme operatörü olarak parantez kullanılır. ()
 
-            byte a = 34;
-            int b = (int)a;
+            //byte a = 34;
+            //int b = (int)a;
 
-            checked
-            {
-                int c = 666;
-                byte d = (byte)c;
-            }
-            
+            //checked
+            //{
+            //    int c = 666;
+            //    byte d = (byte)c;
+            //}
+
 
             // checked - unchecked
             // bilinçi dönüşümde veri kaybını önlemek için kullanılır
 
             // dönüşümü checked bloğunun içinde yaparsak veri kaybı olduğunda bizi uyarır
+
+            //int a = 23;
+            //label1.Text = Convert.ToString(a);
+            //a = 34;
+
+
+
+
+            // OPERATÖRLER
+            // + - * / % ++ --
+
+            //int a = 34;
+            //if (a % 2 == 0)
+            //    label1.Text = "sayı çifttir";
+            //else
+            //    label1.Text = "sayı tektir";
+
+            //int a = 29;
+            //a = ++a; a yı arttırır sonra atama yapar, a = a + 1
+            // a = a++ a yı atadıktan sonra arttırır
+            //label1.Text = (++a).ToString();
+
+            // <, >, <=, >=, ==, != eşit değil
+            // =, ==
+            // || veya, && ve
+            // =, +=, -=, *=, /=, %=
+            //label1.Text += " giriniz:";
+
+            // () [] ?:
+            // koşul ? işlem1 : işlem2
+
+            //int x = 4;
+            //string y = "kalem";
+            //y = y + (x == 1 ? "" : "ler");
+            //label1.Text = y;
+
+            
+            //double e = 1d / 2d;
+            //label3.Text = e.ToString();
+
+
+
+
+            // KARAR YAPILARI
+            // if ve switch
+            // if koşul ifadesi
+            // if (koşul) yapılacak işlem
         }
 
         private void button6_Click(object sender, EventArgs e)
