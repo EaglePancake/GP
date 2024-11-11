@@ -77,7 +77,7 @@ namespace WindowsFormsApp2
             //      ...
             //
             //      default:
-            //      yapılacak işlemler;
+            //          yapılacak işlemler;
             //          break;
             // }
 
@@ -100,7 +100,7 @@ namespace WindowsFormsApp2
             // FOR DONGÜSÜ
 
             // for (ifade1; ifade2; ifade3)
-            // işlem veya işlemler
+            //      işlem veya işlemler
 
             // ifade1 döngü değişkeninin başlangıç değeridir
             // ifade2 ise koşuldur
@@ -111,6 +111,7 @@ namespace WindowsFormsApp2
         {
             int a = 12;
 
+           
             switch (a)
             {
                 case 2:
@@ -131,7 +132,9 @@ namespace WindowsFormsApp2
         {
             int i;
             for (i = 1; i <= 4; i++)
+            {
                 label4.Text = "for döngüsü";
+            }
             label4.Text = i.ToString();
         }
     }

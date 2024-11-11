@@ -124,7 +124,7 @@ namespace WindowsFormsApp1
             //short c = -30000;
 
             // ushort
-            // 0..65535
+            // 0..65535 2^16
             //ushort d = 60000;
 
             // int veri türü
@@ -141,15 +141,21 @@ namespace WindowsFormsApp1
             // 0..2^64-1
 
             // float
+            // 32 bitlik signed
+            //float y = 64.3f;
 
-            // double
+            // double precision
+            // 64 bitlik ondalık signed
+            //double b = 64.3d;
 
             // decimal
-            // decimal a = 25.6m;
+            //decimal a = 25.6m;
 
             // bool
+            //bool a = true;
 
             // char
+            //char asadasdas = 'n';
 
             // REFERANS TÜRLER
 
@@ -175,17 +181,17 @@ namespace WindowsFormsApp1
             // nesneler birer object olduğundan bütün değerler ve nesneler object türünden
             // bir değişkene atanabilir
 
-            //object a;
-            //a = 5;
-            //label4.Text = a.GetType().ToString();
-            //a = 'A';
-            //label5.Text = a.GetType().ToString();
-            //a = 153.2;
-            //label6.Text = a.GetType().ToString();
+            ////object a;
+            ////a = 5;
+            ////label4.Text = a.GetType().ToString();
+            ////a = 'A';
+            ////label5.Text = a.GetType().ToString();
+            ////a = 153.2;
+            ////label6.Text = a.GetType().ToString();
             //a = true;
-            //label7.Text = a.GetType().ToString();
+            ////label7.Text = a.GetType().ToString();
             //a = 46.1351m;
-            //label8.Text = a.GetType().ToString();
+            ////label8.Text = a.GetType().ToString();
 
 
 
@@ -231,11 +237,11 @@ namespace WindowsFormsApp1
             //byte a = 34;
             //int b = (int)a;
 
-            //checked
-            //{
-            //    int c = 666;
-            //    byte d = (byte)c;
-            //}
+            checked
+            {
+                int c = 666;
+                byte d = (byte)c;
+            }
 
 
             // checked - unchecked
@@ -259,6 +265,15 @@ namespace WindowsFormsApp1
             //else
             //    label1.Text = "sayı tektir";
 
+            if (true)
+            {
+                label1.Text = "sayı çifttir";
+            }
+            else
+            {
+
+            }
+
             //int a = 29;
             //a = ++a; a yı arttırır sonra atama yapar, a = a + 1
             // a = a++ a yı atadıktan sonra arttırır
@@ -268,19 +283,24 @@ namespace WindowsFormsApp1
             // =, ==
             // || veya, && ve
             // =, +=, -=, *=, /=, %=
+            //int a = 5;
+            //a /= 5;
+            //a = a / 5;
             //label1.Text += " giriniz:";
 
             // () [] ?:
             // koşul ? işlem1 : işlem2
-
+            bool cift = 5 % 2 == 0 ? true : false;
+            //int[] a = new int[5];
+            //a[4] += 5;
             //int x = 4;
             //string y = "kalem";
             //y = y + (x == 1 ? "" : "ler");
             //label1.Text = y;
 
-            
-            //double e = 1d / 2d;
-            //label3.Text = e.ToString();
+
+            double e = 1d / 2d;
+            label3.Text = e.ToString();
 
 
 
@@ -304,6 +324,11 @@ namespace WindowsFormsApp1
             label7.Text = a.GetType().ToString();
             a = 46.1351m;
             label8.Text = a.GetType().ToString();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
